@@ -1,0 +1,108 @@
+main {
+  border: 1px solid black;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px; //要詢問，沒加這個會跟header黏再一起
+  width: 100%;
+  .brown {
+    width: 40%; //下百分比沒有背景顏色
+    background: #e6dace;
+    // width: 900px;
+    height: 500px;
+  }
+  .photo img {
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .main_box {
+    width: 75%;
+    max-width: 716px;
+    // 問我該寫死高度，還是用%
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+    border: 5px solid yellow;
+  }
+  .profile {
+    width: 70%;
+    max-width: 340px;
+    border: 2px solid purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #e6dace;
+  }
+  .profile > h2 {
+    font-size: 20px;
+    // border-bottom: 3px solid rgb(46, 127, 33);
+    // padding-bottom: 15px;
+    position: relative;
+  }
+  .profile > h2::after {
+    content: "";
+    // position: absolute;
+    display: block;
+    width: 70%;
+    height: 30px;
+    border-bottom: 3px solid blue;
+  }
+  .profile_footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+  }
+  .footer_icon {
+    width: 100%;
+    display: inline-flex;
+    list-style: none;
+    border: 1px solid rgb(140, 210, 153);
+    li {
+      margin: 0 30px;
+      // 問與justify-content: space-around;有何區別
+    }
+  }
+  .main-right {
+    .main-right .btn_box {
+      margin-left: 20px;
+      button {
+        padding: 9px 30px;
+        border-radius: 20px;
+        border: 2px solid #000;
+        background-color: #0050ff;
+        color: white;
+        &:hover {
+          //詢問&，為何不是button:hover
+          color: #000;
+          background-color: white;
+          border: 2px solid #0050ff;
+        }
+      }
+      button:nth-child(2) {
+        background-color: white;
+        color: #000;
+        &:hover {
+          background-color: #0050ff;
+          color: white;
+        }
+      }
+      .main-right p {
+      }
+    }
+    h2,
+    h3 {
+      border: 5px solid red;
+      text-align: center;
+      font-size: x-large;
+    }
+    p {
+      padding-top: 20px;
+      margin: 0 auto;
+      text-align: center;
+      width: 85%;
+    }
+  }
+}

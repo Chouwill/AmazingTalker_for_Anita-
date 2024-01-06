@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+  <!-- <link rel="stylesheet" href="./CSS/other.css" /> -->
+  <style>
+    main {
+  border: 1px solid black;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  width: 100%;
+  position: relative;
+}
+main .brown {
+  width: 40%;
+  background: #e6dace;
+  height: 500px;
+}
+main .photo img {
+  width: 100%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .main_box {
+  width: 75%;
+  max-width: 716px;
+  height: auto;
+  display: flex;
+  margin: 0 auto;
+  border: 5px solid yellow;
+}
+main .profile {
+  width: 70%;
+  max-width: 340px;
+  border: 2px solid purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #e6dace;
+}
+main .profile > h2 {
+  font-size: 20px;
+  position: relative;
+}
+main .profile > h2::after {
+  content: "";
+  display: block;
+  width: 70%;
+  height: 30px;
+  border-bottom: 3px solid blue;
+}
+main .profile_footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+main .footer_icon {
+  width: 100%;
+  display: inline-flex;
+  list-style: none;
+  border: 1px solid rgb(140, 210, 153);
+}
+main .footer_icon li {
+  margin: 0 30px;
+}
+main .main-right .main-right .btn_box {
+  margin-left: 20px;
+}
+main .main-right .main-right .btn_box button {
+  padding: 9px 30px;
+  border-radius: 20px;
+  border: 2px solid #000;
+  background-color: #0050ff;
+  color: white;
+}
+main .main-right .main-right .btn_box button:hover {
+  color: #000;
+  background-color: white;
+  border: 2px solid #0050ff;
+}
+main .main-right .main-right .btn_box button:nth-child(2) {
+  background-color: white;
+  color: #000;
+  
+}
+
+  </style>
+  <body>
+    <main>
+      <div class="brown"></div>
+      <div class="main_box">
+        <div class="profile">
+          <div class="photo">
+            <img
+              src="https://static.wixstatic.com/media/2e2a49_bd3a1599bc1b4265a01b2754b99b8536~mv2_d_5760_3840_s_4_2.jpeg/v1/crop/x_2703,y_43,w_2199,h_2205/fill/w_205,h_205,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/AdobeStock_230407429.jpeg"
+              alt="大頭照"
+            />
+          </div>
+          <h2>Maya Nelson</h2>
+          <h3>PROJECT MANAGER</h3>
+          <div class="profile_footer">
+            <ul class="footer_icon">
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="blue-line"></div>
+        </div>
+        <div class="main-right">
+          <h2>Hello</h2>
+          <h3>Here's who I am & what I do</h3>
+          <div class="btn_box">
+            <button>RESUME</button>
+            <button>PROJECTS</button>
+          </div>
+          <p>
+            I'm a paragraph. Click here to add your own text and edit me. It’s
+            easy. Just click “Edit Text” or double click me to add your own
+            content and make changes to the font.
+          </p>
+          <p>
+            I’m a great place for you to tell a story and let your users know a
+            little more about you.
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
