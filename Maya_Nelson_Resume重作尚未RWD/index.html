@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <style>
+      *,
+      a {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+        box-sizing: border-box;
+        color: #000;
+      }
+      .wrap {
+        max-width: 1200px;
+        margin: 0 auto;
+        border: 1px solid red;
+      }
+      header {
+        display: flex;
+        align-items: center;
+        border: 5px solid greenyellow;
+      }
+      nav {
+        flex: 1;
+        /* border: 5px solid yellow; */
+      }
+      nav a {
+        margin-right: 15px;
+      }
+      nav a:nth-child(1) {
+        margin-left: 15px;
+      }
+      .logo_box {
+        flex: 2;
+        display: flex;
+        align-items: center;
+        border: 5px solid green;
+      }
+      .background {
+        position: relative;
+        width: 100%;
+        height: 70vh;
+        display: flex;
+      }
+      .brown {
+        width: 60%;
+        background-color: blanchedalmond;
+      }
+      .red {
+        background-color: #a00b0b;
+        width: 40%;
+      }
+
+      .profile {
+        display: flex;
+        position: absolute;
+        max-width: 35vw;
+        height: auto;
+        border: 2px solid red;
+        top: 150px;
+        right: 200px;
+      }
+      .photo_img_box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        /* border: 2px solid orange; */
+      }
+      .photo_img_box img {
+        width: 50%;
+        border-radius: 50%;
+        margin: 15px 0;
+      }
+      .photo_img_box h2 {
+        margin: 15px 0;
+      }
+      .line {
+        display: block;
+        width: 25px;
+        height: 2px;
+        background-color: blue;
+        /* margin: 15px auto; */
+      }
+      .photo_img_box h4 {
+        padding-top: 10px;
+      }
+      .photo_footer {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        background-color: rgb(217, 205, 255);
+        height: 40px;
+      }
+      .photo_footer a {
+        margin-right: 75px; /*要詢問推算的比例*/
+      }
+      .photo_footer a:first-child {
+        margin-left: 50px;
+      }
+      .introduction {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        /* border: 2px solid green; */
+        background-color: white;
+      }
+      .introduction h1,
+      h2 {
+        text-align: left;
+        font-size: 20px;
+        padding: 10px 10px;
+      }
+
+      .introduction button {
+        border-radius: 20px;
+        padding: 5px 10px;
+        background-color: #0050ff;
+        color: white;
+        margin: 0 10px;
+      }
+      .introduction button:hover {
+        border-radius: 20px;
+        padding: 5px 10px;
+        background-color: white;
+        color: black;
+        margin: 0 10px;
+      }
+      .introduction button:last-child {
+        background-color: white;
+        color: #000;
+        padding: 5px 10px;
+      }
+      .introduction button:last-child:hover {
+        background-color: #0050ff;
+        color: white;
+        padding: 5px 10px;
+      }
+      .introduction p {
+        margin: 25px 10px;
+      }
+      footer {
+        width: 100%;
+        height: 7vh;
+        display: flex;
+        border: 5px solid green;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .left_box {
+        flex: 3;
+      }
+      .footer_link {
+        display: flex;
+        justify-content: end;
+        flex: 2;
+        border: 2px solid red;
+      }
+      .footer_link li {
+        margin-right: 120px;
+        
+      }
+      .footer_link li:first-child {
+        margin-left: 50px;
+      }
+      .follow {
+        width: 150px;
+        border: 2px solid tomato;
+        display: flex;
+        flex-direction: column;
+      }
+      .follow p {
+        text-align: center;
+      }
+      .link {
+        display: block;
+        margin: 0 auto;
+      }
+      .link a {
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="header logo_box">
+          <h2>Maya Nelson</h2>
+          <p>/ PROJECT MANAGER</p>
+        </div>
+        <nav>
+          <a href="#">ABOUT ME</a>
+          <a href="#">RESUME</a>
+          <a href="#">PROJECTS</a>
+          <a href="#">CONTACT</a>
+        </nav>
+      </header>
+
+      <div class="background">
+        <div class="brown">55555555555</div>
+        <div class="red">BBBBBBBBBBBBBBBBBBB</div>
+        <main class="profile">
+          <div class="photo_img_box">
+            <img
+              src="https://static.wixstatic.com/media/2e2a49_bd3a1599bc1b4265a01b2754b99b8536~mv2_d_5760_3840_s_4_2.jpeg/v1/crop/x_2703,y_43,w_2199,h_2205/fill/w_164,h_164,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/AdobeStock_230407429.jpeg"
+              alt="大頭照"
+            />
+            <h2>Maya<br />Nelson</h2>
+            <span class="line"></span>
+            <h4>PROJECT MANAGER</h4>
+            <div class="photo_footer">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="introduction">
+            <h1>HEllo</h1>
+            <h2>Here's who I am & what I do</h2>
+            <div class="btn_a">
+              <button>RESUME</button>
+              <button>PROJECTS</button>
+            </div>
+            <p>
+              I'm a paragraph. Click here to add your own text and edit me. It’s
+              easy. Just click “Edit Text” or double click me to add your own
+              content and make changes to the font.
+            </p>
+            <p>
+              I’m a great place for you to tell a story and let your users know
+              a little more about you.
+            </p>
+          </div>
+        </main>
+      </div>
+
+      <footer>
+        <div class="left_box">
+          <p>
+            © 2035 by Maya Nelson.<br />
+            Powered and secured by Wix
+          </p>
+        </div>
+        <ul class="footer footer_link">
+          <li>
+            <a href="#">Call</a>
+            <!-- <p>123-456-7890</p> -->    <!--這邊+字版面爆掉-->
+        </li>
+          <li>
+            <a href="#">Write</a>
+            <p>info@mysite.com</p>
+          </li>
+          <li>
+            <div class="follow">
+              <p>Follow</p>
+              <div class="link">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>

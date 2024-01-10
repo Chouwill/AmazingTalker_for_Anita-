@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+        box-sizing: border-box;
+      }
+      .wrap {
+        max-width: 1200px;
+        border: 2px solid yellowgreen;
+        margin: 0 auto;
+      }
+      header {
+        display: grid;
+
+        width: 100%;
+        grid-template-columns: repeat(5, 240px);
+        grid-template-rows: repeat(3, 50px);
+        grid-gap: 10px;
+        background-color: yellowgreen;
+        box-sizing: border-box;
+      }
+      .search_box {
+        line-height: 3;
+        background-color: aqua;
+        grid-row-start: 2;
+        grid-row-end: 3;
+      }
+      nav {
+        width: 550px;
+        text-align: center;
+        background-color: orangered;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        margin-left: 50px;
+      }
+      .nav_logo {
+        line-height: 2;
+      }
+      .menu {
+        width: 100%;
+        margin: 15px 0;
+        background-color: burlywood;
+      }
+      .menu a {
+        margin: 0 15px;
+      }
+      .user {
+        width: 205px;
+        background-color: palegreen;
+        display: flex;
+        grid-column-start: 5;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 3;
+      }
+      .user li:first-child {
+        display: flex;
+        justify-content: space-around;
+        flex: 2;
+        /* border: 2px solid red; */
+      }
+      .user li:last-child {
+        flex: 1;
+      }
+      .user a,
+      h4 {
+        font-size: 20px;
+      }
+      .main {
+        width: 100%;
+        display: flex;
+      }
+      .introduction_color {
+        width: 50%;
+        background-color: #f1e4b8;
+        height: 50vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .text p {
+        width: 500px;
+      }
+      .show_now {
+        margin: 20px;
+        padding: 10px 5px;
+        background-color: aqua;
+      }
+      .bg-img {
+        width: 50%;
+        /* background-color: blueviolet; */
+        height: 50vh;
+        background-image: url(https://static.wixstatic.com/media/84770f_acfc43cf570e4f6aa092ca77cb3a96c5~mv2.jpg/v1/fill/w_954,h_472,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_acfc43cf570e4f6aa092ca77cb3a96c5~mv2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .carousel {
+        width: 100%;
+        display: flex;
+      }
+      .carousel li {
+        text-align: center;
+      }
+      .carousel li img {
+        width: 85%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="search_box">
+          <input type="search" value="Search" />
+        </div>
+        <nav>
+          <div class="nav_logo">
+            <a href="#"><h1>JSY</h1></a>
+          </div>
+          <div class="menu">
+            <a href="#">HOME & LiVING</a>
+            <a href="#">Accessories</a>
+            <a href="#">Stationery</a>
+            <a href="#">Sale</a>
+            <a href="#">Gift Card</a>
+          </div>
+        </nav>
+        <ul class="user">
+          <li>
+            <a href="#"><i class="fa-solid fa-user"></i></a>
+            <h4>Log In</h4>
+          </li>
+          <li>
+            <h4>Cart (0)</h4>
+          </li>
+        </ul>
+      </header>
+      <div class="main introduction">
+        <div class="main introduction_color">
+          <div class="text">
+            <h2>
+              The Gift of<br />
+              Good Style
+            </h2>
+            <p>
+              I'm a paragraph. Click here to add your own text and edit me. It’s
+              easy. Just click “Edit Text” or double click me to add your own
+              content and make changes to the font.
+            </p>
+            <a href="#" class="shop_now">SHOP NOW</a>
+          </div>
+        </div>
+        <div class="bg-img"></div>
+      </div>
+
+      <ul class="carousel">
+        <li>
+          <img src="https://picsum.photos/300/200/?random=10" />
+          <p>8888888888</p>
+        </li>
+        <li>
+          <img src="https://picsum.photos/300/200/?random=7" />
+          <p>8888888888</p>
+        </li>
+        <li>
+          <img src="https://picsum.photos/300/200/?random=9" />
+          <p>8888888888</p>
+        </li>
+        <li>
+          <img src="https://picsum.photos/300/200/?random=1" />
+          <p>8888888888</p>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
